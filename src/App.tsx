@@ -1,10 +1,11 @@
+import Homepage from './components/Homepage';
 
-import './App.css'
-function App() {
+const App = () => {
   return (
-    <>
-    </>
-  )
-}
+    <div>
+      <Homepage />
+    </div>
+  );
+};
 
-export default App
+export default App;
