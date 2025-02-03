@@ -1,58 +1,12 @@
 import React from 'react';
 import Footer from './Footer';
+import Navbar from './Navbar';
 
 const Homepage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-300 via-green-500 to-green-700 text-gray-50">
       {/* Navbar */}
-      <nav className="bg-green-800 text-white py-4 px-6 shadow-lg">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="text-2xl font-bold">Pharmacie La Panacée</div>
-          <ul className="flex space-x-6">
-            <li>
-              <a
-                href="#home"
-                className="hover:text-green-300 transition duration-300"
-              >
-                Accueil
-              </a>
-            </li>
-            <li>
-              <a
-                href="#services"
-                className="hover:text-green-300 transition duration-300"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#gallery"
-                className="hover:text-green-300 transition duration-300"
-              >
-                Rayons
-              </a>
-            </li>
-            <li>
-              <a
-                href="#comments"
-                className="hover:text-green-300 transition duration-300"
-              >
-                Avis
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="hover:text-green-300 transition duration-300"
-              >
-                À propos
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+      <Navbar />
       {/* Hero Section */}
       <section id="home" className="text-center py-20">
         <h1 className="text-5xl font-bold mb-4">
