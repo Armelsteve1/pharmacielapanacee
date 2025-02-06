@@ -13,8 +13,8 @@ const Homepage: React.FC = () => {
           Bienvenue à la Pharmacie La Panacée
         </h1>
         <p className="text-xl mb-6">
-          Votre solution santé située à Bafoussam, à 100 mètres de la
-          Préfecture.
+          Votre solution santé naturellement proche de vous située à Bafoussam,
+          à 50 mètres de la Préfecture.
         </p>
         <button className="bg-green-800 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-green-900 transition duration-300">
           Nous contacter
@@ -75,9 +75,7 @@ const Homepage: React.FC = () => {
                   🩺
                 </span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">
-                Consultations Rapides
-              </h3>
+              <h3 className="text-xl font-semibold mb-2">Conseils Rapides</h3>
               <p>
                 Des conseils personnalisés pour votre santé et votre bien-être.
               </p>

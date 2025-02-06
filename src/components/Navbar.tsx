@@ -10,7 +10,17 @@ const Navbar = () => {
   return (
     <nav className="bg-green-800 text-white py-4 px-6 shadow-lg fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold">Pharmacie La Panacée</div>
+        {/* Logo circulaire */}
+        <div className="flex items-center">
+          <img
+            src="/logopanacee.webp"
+            alt="Logo Pharmacie La Panacée"
+            className="h-12 w-12 rounded-full mr-3 border-2 border-white"
+          />
+          <div className="text-2xl font-bold">Pharmacie La Panacée</div>
+        </div>
+
+        {/* Mobile Menu Toggle */}
         <button
           className="block lg:hidden text-white focus:outline-none"
           onClick={toggleMenu}
@@ -63,7 +73,9 @@ const Navbar = () => {
 
       {/* Mobile Menu - Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-green-900 shadow-lg transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`fixed top-0 right-0 h-full w-64 bg-green-900 shadow-lg transform transition-transform duration-300 ${
+          isOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
       >
         <button
           className="absolute top-4 right-4 text-white"
